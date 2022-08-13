@@ -10,49 +10,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.lightBlue,
         body: SafeArea(
-          child: Center(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Container(
-                  //child: Text('Red'),
-                  height: double.infinity,
-                  width: 100.0,
-                  color: Colors.red,
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/igop.jpg'),
+              ),
+              Text(
+                'Val Jeremy Tolosa',
+                style: TextStyle(
+                  fontSize: 30.0,
                 ),
-                SizedBox(
-                  width: 55,
-                ),
-                Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        height: 100.0,
-                        width: 100.0,
-                        color: Colors.yellow,
-                      ),
-                      Container(
-                        height: 100.0,
-                        width: 100.0,
-                        color: Colors.green,
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 55,
-                ),
-                Container(
-                  //child: Text('blue'),
-                  height: double.infinity,
-                  width: 100.0,
-                  color: Colors.blue,
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
