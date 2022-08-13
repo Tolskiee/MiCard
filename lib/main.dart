@@ -36,6 +36,87 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2,
                 ),
               ),
+              Container(
+                padding: EdgeInsets.all(8.0),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25.0,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      '09953290914',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Lora',
+                        fontSize: 15.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(8.0),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25.0,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'vjeremytolosa@gmail.com',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Lora',
+                        fontSize: 15.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(8.0),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25.0,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.facebook,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'Val Jeremy',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Lora',
+                        fontSize: 15.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
