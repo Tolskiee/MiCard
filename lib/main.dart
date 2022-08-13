@@ -10,9 +10,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.white10,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -27,6 +28,9 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              SizedBox(
+                height: 5.0,
+              ),
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
@@ -36,85 +40,68 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(8.0),
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(
-                  vertical: 10,
-                  horizontal: 25.0,
-                ),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '09953290914',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'Lora',
-                        fontSize: 15.0,
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                height: 10.0,
+                width: 125.0,
+                child: Divider(
+                  color: Colors.white,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(8.0),
-                color: Colors.white,
+              Card(
                 margin: EdgeInsets.symmetric(
-                  vertical: 10,
-                  horizontal: 25.0,
+                  vertical: 8,
+                  horizontal: 40.0,
                 ),
-                child: Row(
-                  children: [
-                    Icon(
+                child: Padding(
+                  padding: EdgeInsets.all(0.5),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       color: Colors.black,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
+                    title: Text(
                       'vjeremytolosa@gmail.com',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'Lora',
-                        fontSize: 15.0,
-                      ),
+                      style: TextStyle(fontSize: 16.0, color: Colors.black),
                     ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(8.0),
-                color: Colors.white,
+              Card(
                 margin: EdgeInsets.symmetric(
-                  vertical: 10,
-                  horizontal: 25.0,
+                  vertical: 8,
+                  horizontal: 40.0,
                 ),
-                child: Row(
-                  children: [
-                    Icon(
+                child: Padding(
+                  padding: EdgeInsets.all(0.5),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.black,
+                    ),
+                    title: Text(
+                      '09953290914',
+                      style: TextStyle(fontSize: 16.0, color: Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 8,
+                  horizontal: 40.0,
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(0.5),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.facebook,
                       color: Colors.black,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
+                    title: Text(
                       'Val Jeremy',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'Lora',
-                        fontSize: 15.0,
-                      ),
+                      style: TextStyle(fontSize: 16.0, color: Colors.black),
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
