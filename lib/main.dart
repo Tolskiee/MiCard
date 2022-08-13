@@ -4,7 +4,7 @@ void main() {
   runApp(MyApp());
 }
 
-//test commit
+//test commits
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
