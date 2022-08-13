@@ -21,7 +21,10 @@ class MyApp extends StatelessWidget {
               Text(
                 'Val Jeremy Tolosa',
                 style: TextStyle(
+                  fontFamily: 'Ubuntu',
                   fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ],
